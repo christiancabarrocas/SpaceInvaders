@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9E341FF81B03DFC500FC6664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E341FF71B03DFC500FC6664 /* AppDelegate.swift */; };
-		9E341FFA1B03DFC500FC6664 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9E341FF91B03DFC500FC6664 /* GameScene.sks */; };
 		9E341FFC1B03DFC500FC6664 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E341FFB1B03DFC500FC6664 /* GameScene.swift */; };
 		9E341FFE1B03DFC500FC6664 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E341FFD1B03DFC500FC6664 /* GameViewController.swift */; };
 		9E3420011B03DFC500FC6664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E341FFF1B03DFC500FC6664 /* Main.storyboard */; };
@@ -31,7 +30,6 @@
 		9E341FF21B03DFC500FC6664 /* SpaceInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E341FF61B03DFC500FC6664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E341FF71B03DFC500FC6664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E341FF91B03DFC500FC6664 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		9E341FFB1B03DFC500FC6664 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9E341FFD1B03DFC500FC6664 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9E3420001B03DFC500FC6664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,12 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				9E341FF71B03DFC500FC6664 /* AppDelegate.swift */,
-				9E341FF91B03DFC500FC6664 /* GameScene.sks */,
 				9E341FFB1B03DFC500FC6664 /* GameScene.swift */,
 				9E341FFD1B03DFC500FC6664 /* GameViewController.swift */,
-				9E341FFF1B03DFC500FC6664 /* Main.storyboard */,
 				9E3420021B03DFC500FC6664 /* Images.xcassets */,
-				9E3420041B03DFC500FC6664 /* LaunchScreen.xib */,
 				9E341FF51B03DFC500FC6664 /* Supporting Files */,
 			);
 			path = SpaceInvaders;
@@ -96,6 +91,8 @@
 		9E341FF51B03DFC500FC6664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E341FFF1B03DFC500FC6664 /* Main.storyboard */,
+				9E3420041B03DFC500FC6664 /* LaunchScreen.xib */,
 				9E341FF61B03DFC500FC6664 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -200,7 +197,6 @@
 			files = (
 				9E3420061B03DFC500FC6664 /* LaunchScreen.xib in Resources */,
 				9E3420031B03DFC500FC6664 /* Images.xcassets in Resources */,
-				9E341FFA1B03DFC500FC6664 /* GameScene.sks in Resources */,
 				9E3420011B03DFC500FC6664 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
