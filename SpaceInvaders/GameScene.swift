@@ -8,38 +8,50 @@
 
 import SpriteKit
 
+var invaderNum = 1
+
 class GameScene: SKScene {
+
+    let rowsOfInvaders = 4
+    var invaderSpeed = 2
+    let leftBounds = CGFloat(30)
+    var rightBounds = CGFloat(0)
+    var invadersWhoCanFire:[Invader] = []
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        
-        self.addChild(myLabel)
+        backgroundColor = SKColor.blackColor()
+        setupInvaders()
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
         for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+           
         }
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+
+    }
+    
+    func setupInvaders(){
+        var invaderRow = 0;
+        var invaderColumn = 0;
+        let numberOfInvaders = invaderNum * 2 + 1
+        for var i = 1; i <= rowsOfInvaders; i++ {
+            invaderRow = i
+            for var j = 1; j <= numberOfInvaders; j++ {
+                invaderColumn = j
+                let tempInvader:Invader = Invader()
+                let invaderHalfWidth:CGFloat = tempInvader.size.width/2
+                let xPositionStart:CGFloat = size.width/2 - invaderHalfWidth - (CGFloat(invaderNum) * tempInvader.size.width) + CGFloat(10)
+                tempInvader.position = CGPoint(x:xPositionStart + ((tempInvader.size.width+CGFloat(10))*(CGFloat(j-1))), y:CGFloat(self.size.height - CGFloat(i) * 46))
+                tempInvader.invaderRow = invaderRow
+                tempInvader.invaderColumn = invaderColumn
+                addChild(tempInvader)
+                if(i == rowsOfInvaders){
+                    invadersWhoCanFire.append(tempInvader)
+                }
+            }
+        }
     }
 }

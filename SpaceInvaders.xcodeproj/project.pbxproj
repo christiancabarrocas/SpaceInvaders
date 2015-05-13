@@ -15,6 +15,7 @@
 		9E3420061B03DFC500FC6664 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3420041B03DFC500FC6664 /* LaunchScreen.xib */; };
 		9E3420121B03DFC500FC6664 /* SpaceInvadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3420111B03DFC500FC6664 /* SpaceInvadersTests.swift */; };
 		9E34201C1B03E11000FC6664 /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E34201B1B03E11000FC6664 /* StartGameScene.swift */; };
+		9E34201E1B03E9D000FC6664 /* Invader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E34201D1B03E9D000FC6664 /* Invader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9E3420101B03DFC500FC6664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3420111B03DFC500FC6664 /* SpaceInvadersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceInvadersTests.swift; sourceTree = "<group>"; };
 		9E34201B1B03E11000FC6664 /* StartGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
+		9E34201D1B03E9D000FC6664 /* Invader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				9E341FF71B03DFC500FC6664 /* AppDelegate.swift */,
 				9E341FFB1B03DFC500FC6664 /* GameScene.swift */,
+				9E34201D1B03E9D000FC6664 /* Invader.swift */,
 				9E341FFD1B03DFC500FC6664 /* GameViewController.swift */,
 				9E34201B1B03E11000FC6664 /* StartGameScene.swift */,
 				9E3420021B03DFC500FC6664 /* Images.xcassets */,
@@ -220,6 +223,7 @@
 			files = (
 				9E341FFC1B03DFC500FC6664 /* GameScene.swift in Sources */,
 				9E34201C1B03E11000FC6664 /* StartGameScene.swift in Sources */,
+				9E34201E1B03E9D000FC6664 /* Invader.swift in Sources */,
 				9E341FFE1B03DFC500FC6664 /* GameViewController.swift in Sources */,
 				9E341FF81B03DFC500FC6664 /* AppDelegate.swift in Sources */,
 			);
