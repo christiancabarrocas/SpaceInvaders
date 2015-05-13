@@ -17,4 +17,17 @@ class StartGameScene: SKScene {
         startGameButton.name = "startgame"
         addChild(startGameButton)
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        for touch: AnyObject in touches {
+            let touchLocation = touch.locationInNode(self)
+            let touchedNode = self.nodeAtPoint(touchLocation)
+            if(touchedNode.name == "startgame"){
+                let gameOverScene = GameScene(size: size)
+                gameOverScene.scaleMode = scaleMode
+                let transitionType = SKTransition.crossFadeWithDuration(1.0)
+                view?.presentScene(gameOverScene,transition: transitionType)
+            }
+        }
+    }
 }
