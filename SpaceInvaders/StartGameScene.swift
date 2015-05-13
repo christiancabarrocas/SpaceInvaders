@@ -12,8 +12,8 @@ import SpriteKit
 class StartGameScene: SKScene {
 
     override func didMoveToView(view: SKView) {
-        let startGameButton = SKSpriteNode(imageNamed: "newgamebtn")
-        startGameButton.position = CGPointMake(size.width/2,size.height/2 - 100)
+        let startGameButton = SKSpriteNode(imageNamed: "newGameButton")
+        startGameButton.position = CGPointMake(size.width/2,size.height/2)
         startGameButton.name = "startgame"
         addChild(startGameButton)
     }
