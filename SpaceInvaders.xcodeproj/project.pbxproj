@@ -14,6 +14,7 @@
 		9E3420031B03DFC500FC6664 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3420021B03DFC500FC6664 /* Images.xcassets */; };
 		9E3420061B03DFC500FC6664 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3420041B03DFC500FC6664 /* LaunchScreen.xib */; };
 		9E3420121B03DFC500FC6664 /* SpaceInvadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3420111B03DFC500FC6664 /* SpaceInvadersTests.swift */; };
+		9E34201C1B03E11000FC6664 /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E34201B1B03E11000FC6664 /* StartGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9E34200B1B03DFC500FC6664 /* SpaceInvadersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceInvadersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3420101B03DFC500FC6664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3420111B03DFC500FC6664 /* SpaceInvadersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceInvadersTests.swift; sourceTree = "<group>"; };
+		9E34201B1B03E11000FC6664 /* StartGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				9E341FF71B03DFC500FC6664 /* AppDelegate.swift */,
 				9E341FFB1B03DFC500FC6664 /* GameScene.swift */,
 				9E341FFD1B03DFC500FC6664 /* GameViewController.swift */,
+				9E34201B1B03E11000FC6664 /* StartGameScene.swift */,
 				9E3420021B03DFC500FC6664 /* Images.xcassets */,
 				9E341FF51B03DFC500FC6664 /* Supporting Files */,
 			);
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E341FFC1B03DFC500FC6664 /* GameScene.swift in Sources */,
+				9E34201C1B03E11000FC6664 /* StartGameScene.swift in Sources */,
 				9E341FFE1B03DFC500FC6664 /* GameViewController.swift in Sources */,
 				9E341FF81B03DFC500FC6664 /* AppDelegate.swift in Sources */,
 			);
